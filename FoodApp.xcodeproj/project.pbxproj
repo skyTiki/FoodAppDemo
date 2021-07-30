@@ -14,6 +14,7 @@
 		2A9CD40926B3DBE700416E09 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CD40826B3DBE700416E09 /* Home.swift */; };
 		2A9CD40D26B3DC2F00416E09 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CD40C26B3DC2F00416E09 /* CustomTabBar.swift */; };
 		2A9CD41126B3E28B00416E09 /* LodingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CD41026B3E28B00416E09 /* LodingPage.swift */; };
+		2A9CD41526B3E3F100416E09 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CD41426B3E3F100416E09 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2A9CD40826B3DBE700416E09 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		2A9CD40C26B3DC2F00416E09 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		2A9CD41026B3E28B00416E09 /* LodingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LodingPage.swift; sourceTree = "<group>"; };
+		2A9CD41426B3E3F100416E09 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				2A9CD3F726B3DBA900416E09 /* FoodAppApp.swift */,
 				2A9CD3F926B3DBA900416E09 /* ContentView.swift */,
+				2A9CD41326B3E3DD00416E09 /* Model */,
 				2A9CD40726B3DBD500416E09 /* View */,
 				2A9CD3FB26B3DBAA00416E09 /* Assets.xcassets */,
 				2A9CD40026B3DBAA00416E09 /* Info.plist */,
@@ -84,6 +87,14 @@
 				2A9CD40C26B3DC2F00416E09 /* CustomTabBar.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2A9CD41326B3E3DD00416E09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A9CD41426B3E3F100416E09 /* Category.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 				2A9CD40926B3DBE700416E09 /* Home.swift in Sources */,
 				2A9CD41126B3E28B00416E09 /* LodingPage.swift in Sources */,
 				2A9CD3F826B3DBA900416E09 /* FoodAppApp.swift in Sources */,
+				2A9CD41526B3E3F100416E09 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
