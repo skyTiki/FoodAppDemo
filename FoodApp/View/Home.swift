@@ -25,3 +25,9 @@ struct Home_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+extension View {
+    func getRect() -> CGRect {
+        return UIScreen.main.bounds
+    }
+}

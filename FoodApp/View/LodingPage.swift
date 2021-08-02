@@ -10,8 +10,8 @@ import SwiftUI
 struct LodingPage: View {
     @Binding var selectedCategory: Category
     var body: some View {
-        VStack(spacing: 15) {]
-            // 上のヘッダー
+        VStack(spacing: 15) {
+            // 上のヘッダー部分
             HStack {
                 Button(action: {}, label: {
                     Image(systemName: "circle.grid.2x2")
@@ -47,6 +47,49 @@ struct LodingPage: View {
                 }
             )
             .padding()
+            
+            //
+            ScrollView(.vertical, showsIndicators: false, content: {
+                VStack(alignment: .leading, spacing: 15, content: {
+                    
+                    HStack(spacing: 20) {
+                        VStack(alignment: .leading, spacing: 12, content: {
+                            (
+                                Text("The Fastest in Delivery")
+                                    +
+                                    Text("Food")
+                                    .foregroundColor(.pink)
+                            )
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            
+                            Button(action: {}, label: {
+                                Text("Order Now")
+                                    .font(.footnote)
+                                    .foregroundColor(.white)
+                                    .padding(.vertical, 10)
+                                    .padding(.horizontal)
+                                    .background(Color.pink)
+                                    .clipShape(Capsule())
+                            })
+                            
+                        })
+                        .padding(.leading)
+                        
+                        Spacer(minLength: 0)
+                        
+                        Image("delivery_man")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: getRect().width / 3)
+                        
+                    }
+                    .padding()
+                    .background(Color("lightyellow"))
+                    .cornerRadius(15)
+                    .padding(.horizontal)
+                })
+            })
         }
     }
 }
