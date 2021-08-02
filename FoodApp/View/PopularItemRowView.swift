@@ -24,6 +24,7 @@ struct PopularItemRowView: View {
             Image(item.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                // 画面の3分の1
                 .frame(width: getRect().width/3)
                 .padding(.top, 6)
             
@@ -39,7 +40,7 @@ struct PopularItemRowView: View {
                 Text("$ ")
                     .font(.footnote)
                     .foregroundColor(.pink)
-                +
+                    +
                     Text(item.price)
                     .font(.title2)
                     .foregroundColor(.black)

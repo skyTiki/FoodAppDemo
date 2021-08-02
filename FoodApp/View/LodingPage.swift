@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct LodingPage: View {
+    // カテゴリーボタンで必要
     @Binding var selectedCategory: Category
+    
     var body: some View {
         VStack(spacing: 15) {
-            // 上のヘッダー部分
+            // MARK: - 上のヘッダー部分
             HStack {
                 Button(action: {}, label: {
                     Image(systemName: "circle.grid.2x2")
@@ -33,6 +35,7 @@ struct LodingPage: View {
                         .cornerRadius(8)
                 })
             }
+            // オーバーレイでHStackの中央にテキスト配置
             .overlay(
                 HStack(spacing: 4) {
                     Image(systemName: "mappin.and.ellipse")
@@ -48,10 +51,11 @@ struct LodingPage: View {
             )
             .padding()
             
-            //
+            // MARK: - メイン画面
             ScrollView(.vertical, showsIndicators: false, content: {
                 VStack(alignment: .leading, spacing: 15, content: {
                     
+                    // MARK: - デリバリーマンの画像部分
                     HStack(spacing: 20) {
                         VStack(alignment: .leading, spacing: 12, content: {
                             (
@@ -128,6 +132,7 @@ struct LodingPage: View {
                         .padding(.top, 10)
                     })
                     
+                    // MARK: - 人気商品のカードビュー
                     HStack {
                         Text("Popular Now")
                             .font(.title2)
