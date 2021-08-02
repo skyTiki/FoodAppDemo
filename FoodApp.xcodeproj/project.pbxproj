@@ -16,6 +16,7 @@
 		2A9CD41126B3E28B00416E09 /* LodingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CD41026B3E28B00416E09 /* LodingPage.swift */; };
 		2A9CD41526B3E3F100416E09 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CD41426B3E3F100416E09 /* Category.swift */; };
 		2A9CD41A26B7A62800416E09 /* Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CD41926B7A62800416E09 /* Popular.swift */; };
+		2A9CD41D26B7A86100416E09 /* PopularItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CD41C26B7A86100416E09 /* PopularItemRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2A9CD41026B3E28B00416E09 /* LodingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LodingPage.swift; sourceTree = "<group>"; };
 		2A9CD41426B3E3F100416E09 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		2A9CD41926B7A62800416E09 /* Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popular.swift; sourceTree = "<group>"; };
+		2A9CD41C26B7A86100416E09 /* PopularItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularItemRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				2A9CD40826B3DBE700416E09 /* Home.swift */,
 				2A9CD41026B3E28B00416E09 /* LodingPage.swift */,
 				2A9CD40C26B3DC2F00416E09 /* CustomTabBar.swift */,
+				2A9CD41C26B7A86100416E09 /* PopularItemRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9CD41D26B7A86100416E09 /* PopularItemRowView.swift in Sources */,
 				2A9CD40D26B3DC2F00416E09 /* CustomTabBar.swift in Sources */,
 				2A9CD3FA26B3DBA900416E09 /* ContentView.swift in Sources */,
 				2A9CD40926B3DBE700416E09 /* Home.swift in Sources */,

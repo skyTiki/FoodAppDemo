@@ -156,9 +156,23 @@ struct LodingPage: View {
                     }
                     .padding(.horizontal)
                     .padding(.bottom, 10)
+                    
+                    ScrollView(.horizontal, showsIndicators: false, content: {
+                        HStack(spacing: 25) {
+                            ForEach(popularItems) { item in
+                                PopularItemRowView(item: item)
+                            }
+                        }
+                        .padding(.horizontal)
+                        .padding(.leading, 10)
+                        .padding(.top, 10)
+                    })
                 })
+                .padding(.vertical)
+                .padding(.bottom, 20)
             })
         }
+        .background(Color.black.opacity(0.03).ignoresSafeArea())
     }
 }
 
