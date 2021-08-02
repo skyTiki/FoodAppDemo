@@ -16,7 +16,7 @@ struct LodingPage: View {
                 Button(action: {}, label: {
                     Image(systemName: "circle.grid.2x2")
                         .font(.title2)
-                        .padding(10)
+                        .padding(9)
                         .background(Color.pink.opacity(0.12))
                         .foregroundColor(.pink)
                         .cornerRadius(8)
@@ -26,7 +26,7 @@ struct LodingPage: View {
                     Image(systemName: "person")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 30, height: 30)
+                        .frame(width: 20, height: 20)
                         .padding(10)
                         .background(Color.black.opacity(0.08))
                         .foregroundColor(.pink)
