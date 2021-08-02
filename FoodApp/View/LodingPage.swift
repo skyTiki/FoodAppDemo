@@ -124,9 +124,38 @@ struct LodingPage: View {
                                 
                             }
                         }
+                        .padding(.horizontal)
+                        .padding(.top, 10)
                     })
                     
-                    
+                    HStack {
+                        Text("Popular Now")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                        
+                        Spacer()
+                        
+                        Button(action: {}, label: {
+                        
+                            HStack {
+                                Text("Viwe All")
+                                    .font(.footnote)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.pink)
+                                
+                                Image(systemName: "chevron.right")
+                                    .font(.footnote)
+                                    .foregroundColor(.white)
+                                    .padding(.vertical, 4)
+                                    .padding(.horizontal, 6)
+                                    .background(Color.pink)
+                                    .cornerRadius(5)
+                            }
+                        })
+                        
+                    }
+                    .padding(.horizontal)
+                    .padding(.bottom, 10)
                 })
             })
         }
