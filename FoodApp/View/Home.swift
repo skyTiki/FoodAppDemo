@@ -9,13 +9,15 @@ import SwiftUI
 
 struct Home: View {
     @State var selectedTab = "house"
+    @State var categoriyList = categories
     var body: some View {
         VStack(spacing: 0) {
+            LodingPage(selectedCategory: $categoriyList[0])
             Spacer()
             
             CustomTabBar(selectedTab: $selectedTab)
         }
-        .ignoresSafeArea()
+        .ignoresSafeArea(edges: .bottom)
         .preferredColorScheme(.light)
     }
 }

@@ -74,7 +74,7 @@ struct LodingPage: View {
                             })
                             
                         })
-                        .padding(.leading)
+                        .padding(.leading, 3)
                         
                         Spacer(minLength: 0)
                         
@@ -88,6 +88,45 @@ struct LodingPage: View {
                     .background(Color("lightyellow"))
                     .cornerRadius(15)
                     .padding(.horizontal)
+                    
+                    // MARK: - ボタンの横スクロール
+                    Text("Categories")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding([.horizontal, .top])
+                    
+                    ScrollView(.horizontal, showsIndicators: false, content: {
+                        HStack {
+                            ForEach(categories) { category in
+                                HStack(spacing: 15) {
+                                    Image(category.image)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 18, height: 18)
+                                        .padding(5)
+                                        .background(selectedCategory.id == category.id ? Color.white : Color.clear)
+                                        .clipShape(Circle())
+                                    
+                                    
+                                    Text(category.title)
+                                        .fontWeight(.bold)
+                                        .foregroundColor(selectedCategory.id == category.id ? .white : .black)
+                                }
+                                .padding(.vertical, 12)
+                                .padding(.horizontal)
+                                .background(selectedCategory.id == category.id ? Color.pink : Color.gray.opacity(0.08))
+                                .clipShape(Capsule())
+                                .onTapGesture {
+                                    withAnimation(.spring()) {
+                                        selectedCategory = category
+                                    }
+                                }
+                                
+                            }
+                        }
+                    })
+                    
+                    
                 })
             })
         }
@@ -96,6 +135,6 @@ struct LodingPage: View {
 
 struct LodingPage_Previews: PreviewProvider {
     static var previews: some View {
-        LodingPage(selectedCategory: .constant(categories[0]))
+        ContentView()
     }
 }
